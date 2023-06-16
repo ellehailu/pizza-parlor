@@ -19,8 +19,11 @@ function Pizza(toppings, size){
 
 //prototype.calculate total price
 //takes number of toppings and size selected and returns a total price.
+//Price calculation: enter toppings into an array
+//if toppingsArray.length === 3 then price = 3
+//if toppingsArray.length === 2 then price = 2
+//if toppingsArray.length === 1 then price = 1
 Pizza.prototype.calculatePrice = function(){
-    let pizzaPrice = 0;
     if (this.size === "small"){
         pizzaPrice = 10;
         
