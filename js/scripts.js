@@ -37,7 +37,20 @@ Pizza.prototype.calculatePrice = function(){
     return pizzaPrice;
 }
 
-
-
-
 // UI Logic
+function handleForm(event){
+    event.preventDefault();
+    const toppings = document.getElementsByName("toppings");
+    const size = document.getElementById("size");
+    let selectedToppings = [];
+    for(let i = 0; i < toppings.length; i++){
+        if(toppings[i].checked){
+            selectedToppings.push(toppings[i].value);
+        }
+    }
+    return selectedToppings;
+}
+
+window.addEventListener("load", function(){
+    document.getElementById("customOrder").addEventListener("submit", handleForm);
+})
