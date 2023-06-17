@@ -14,21 +14,27 @@ Pizza.prototype.calculatePrice = function() {
             toppingsArray++;
         }
     })
-    if(toppingsArray <= 3){
+   //try to consolidate this logic and express it more conscisely
+    if (this.size === "small"){
         pizzaPrice = 10;
+        
     }
-    else if (toppingsArray >= 4){
-        pizzaPrice = 15;
+    else if(this.size === "medium"){
+        pizzaPrice = 12
     }
-    // if (this.size === "small"){
-    //     pizzaPrice = 10;
-    // }
-    // else if(this.size === "medium"){
-    //     pizzaPrice = 15;
-    // }
-    // else if(this.size === "large"){
-    //     pizzaPrice = 20;
-    // }
+    else if(this.size === "large"){
+        pizzaPrice = 14;
+    }
+
+    if(toppingsArray <= 2){
+        return pizzaPrice;
+    }
+    else if(toppingsArray <= 4){
+        pizzaPrice = pizzaPrice + 2;
+    }
+    else if(toppingsArray <= 6){
+        pizzaPrice = pizzaPrice + 4;
+    }
     return pizzaPrice;
 }
 // UI Logic
