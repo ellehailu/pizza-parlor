@@ -5,10 +5,21 @@ function Pizza(toppings, size) {
 }
 
 Pizza.prototype.calculatePrice = function() {
-    let pizzaPrice = 0;
+    let pizzaPrice;
     const checkedToppings = document.querySelectorAll('input[name="topping"]:checked');
-    const toppingsArray = Array.from(checkedToppings).map(checkbox => checkbox.value);
-    
+    let toppingsArray = 0;
+
+    checkedToppings.forEach((checkbox) => {
+        if(checkbox.checked){
+            toppingsArray++;
+        }
+    })
+    if(toppingsArray <= 3){
+        pizzaPrice = 10;
+    }
+    else if (toppingsArray >= 4){
+        pizzaPrice = 15;
+    }
     // if (this.size === "small"){
     //     pizzaPrice = 10;
     // }
@@ -19,11 +30,6 @@ Pizza.prototype.calculatePrice = function() {
     //     pizzaPrice = 20;
     // }
     return pizzaPrice;
-}
-
-function getToppings(){
-    
-
 }
 // UI Logic
 let myPizza = new Pizza();
