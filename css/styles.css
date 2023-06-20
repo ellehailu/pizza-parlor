@@ -1,0 +1,19 @@
+body{
+    background-image: url("/images/background.jpg");
+}
+
+.customOrder{
+    background-color: black;
+    border-radius: 5%;
+    color: white;
+    margin: 15%;
+    padding: 2%;
+}
+
+.totalCost{
+    background-color: black;
+    color: white;
+    font-size: 150%;
+    margin-left: 15%;
+    margin-right: 60%;
+}
