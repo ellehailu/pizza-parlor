@@ -45,7 +45,7 @@ function showPrice(priceToDisplay){
     priceDiv.innerText = null;
     const p = document.createElement("p");
     const cost = priceToDisplay.calculatePrice();
-    p.append("your total cost is: $", cost);
+    p.append("your order is coming right up! \nYour total cost is: $", cost);
     priceDiv.append(p);
 }
 
@@ -55,6 +55,7 @@ function handleForm(event){
         const selectedSize = document.querySelector("input[name='size']:checked").value;
         myPizza = new Pizza(selectedToppings, selectedSize);
         showPrice(myPizza);
+        document.getElementById("customOrder").reset();
     }
     
 window.addEventListener("load", function(){
