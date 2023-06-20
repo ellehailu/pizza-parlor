@@ -45,7 +45,6 @@ Expected Output: Pizza {toppings: ["anchovies", "pineapple"], size: "medium"};
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns. Encourage them to contact you or make a contribution to the code.}_
 _If you run into any issues or have any questions, ideas, or concerns please reach out to Elle Hailu (hailu.elle@gmail.com)._
 
 _MIT_[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
