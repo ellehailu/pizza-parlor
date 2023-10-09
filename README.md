@@ -12,11 +12,11 @@
 
 ## Description
 
-\_A website for a pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc.), a size to order a pizza, and see the final cost.
+- A website for a pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc.), a size to order a pizza, and see the final cost.
 
-The application allows the user to choose toppings and size for the pizza they'd like to order.
-The application includes a pizza object constructor with properties for toppings and size.
-It also includes a prototype method for the cost of a pizza depending on the selections chosen.\_
+- The application allows the user to choose toppings and size for the pizza they'd like to order.
+- The application includes a pizza object constructor with properties for toppings and size.
+It also includes a prototype method for the cost of a pizza depending on the selections chosen.
 
 ## Setup/Installation Requirements
 
