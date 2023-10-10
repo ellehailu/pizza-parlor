@@ -4,6 +4,8 @@
 
 #### _A website for a pizza company to recieve online orders._
 
+![Pizza Parlor Website Screenshot](./pizzaParlor.png)
+
 ## Technologies Used
 
 - _JavaScript_
